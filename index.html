@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b75bcb6c1a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>tic toc </title>
+</head>
+<style> @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); </style>
+<body>
+
+
+
+    <div class="game">
+
+        <i id="restart" class="fa-solid fa-arrow-rotate-left"> </i>
+
+        <div class="game-name">TIC TAC TOE GAME</div>
+        
+        <div class="returns">
+
+            <div class="divx">
+                <i class="fa-solid fa-xmark"></i>
+                <span id="countx">0</span>
+            </div>
+
+            <div class="divo">
+                <i class="fa-regular fa-circle"></i>
+                <span id="counto">0</span>
+            </div>
+            
+        </div>
+
+
+
+        <div class="container">
+
+            <div class="result">
+                <span class="winner">O</span>
+                <p>WINNER !</p>
+            </div>
+
+            <div class="square" id="item1" onclick="game(this.id)"></div>
+            <div class="square" id="item2" onclick="game(this.id)"></div>
+            <div class="square" id="item3" onclick="game(this.id)"></div>
+
+            <div class="square" id="item4" onclick="game(this.id)"></div>
+            <div class="square" id="item5" onclick="game(this.id)"></div>
+            <div class="square" id="item6" onclick="game(this.id)"></div>
+
+            <div class="square" id="item7" onclick="game(this.id)"></div>
+            <div class="square" id="item8" onclick="game(this.id)"></div>
+            <div class="square" id="item9" onclick="game(this.id)"></div>
+        </div>
+
+
+       
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

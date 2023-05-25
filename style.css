@@ -1,0 +1,142 @@
+body {
+    color: white;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Fredoka One';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-name {
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding: 30px;
+    margin-left: 10px;
+    width: 465px;
+    height: 620px;
+    background-color: #202124;
+    border-radius: 0px 40px 0px 0px;
+}
+
+span {
+    color: rgba(255, 58, 58, 0.832);
+    font-weight: 800;
+    display: flex;
+    margin-right: 4px;
+}
+
+.square:hover {
+    color: white;
+    background-color: black;
+}
+
+.returns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.returns .divo,
+.returns .divx {
+    width: 22%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 22px;
+    border: 2px solid white;
+    border-radius: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+.container {
+    margin: 20px 0px 10px ;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+   
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 1px;
+    background-color: rgba(0, 255, 255);
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.show {
+    z-index: 1;
+}
+
+.result .winner {
+    color: red;
+    font-size: 230px;
+    font-weight: bolder;
+    font-weight: 900;
+    transition: all 1s ease;
+
+}
+
+.result p {
+    margin-top: -20px;
+    font-size: 60px;
+
+}
+
+.square {
+    border-radius: 4px;
+    color: white;
+    background-color: rgba(0, 255, 255, 0.755);
+    margin: 2px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+    transition: all 1.5s ease-in;
+}
+
+#restart {
+    background-color: rgb(1, 128, 11);
+    padding: 20px;
+    width: fit-content;
+    border-radius: 50%;
+    font-size: 30px;
+    align-self: flex-end;
+    margin-right: -40px;
+    margin-top: -30px;
+    border: 10px white solid;
+}
+
+#restart:hover {
+    background-color: rgba(1, 128, 12, 0.519);
+}
+
+.red {
+    background-color: red;
+    columns: red;
+}
+
+/*  */
+.stopclick {
+    pointer-events: none;
+}
